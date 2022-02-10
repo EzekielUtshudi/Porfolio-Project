@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Hello World 
+# Setup and mobile version skeleton part 1
 
-> A simple Hello World project.
+> Profile project part 1.
 
 ## Built With
 
@@ -27,8 +27,8 @@ To get a local copy up and running follow these simple example steps.
 -node js & npm
 
 ### Setup
--git clone \<project-name>
--cd \<project-name>
+-git clone \<Profile-project-part-one>
+-cd \<Profile-project-part-one>
 
 ### Install
 - nom Install
