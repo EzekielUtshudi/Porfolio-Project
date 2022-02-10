@@ -17,6 +17,7 @@ body {
 a {
   text-decoration: none;
   transition: all 0.2s ease-in;
+  color: #172b4d;
 }
 
 a:hover {
@@ -45,7 +46,7 @@ a:hover {
 
 .nav-link {
   padding: 10px 12px;
-  margin: 0px 8px;
+  margin: 0 8px;
   font-weight: 600;
   font-size: 16px;
   line-height: 28px;
@@ -55,10 +56,8 @@ a:hover {
 .mb-menu {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 48px;
   height: 48px;
-  display: flex;
   justify-content: space-around;
   align-items: center;
   border-radius: 8px;
@@ -89,7 +88,7 @@ a:hover {
 }
 
 .hero {
-  background-image: url('../img/header-llustration-desktop.svg');
+  background-image: url('../img/header-illsutration-mobile.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -103,7 +102,7 @@ a:hover {
   align-items: center;
   justify-content: flex-start;
   height: 756px;
-  margin: 72px auto 231px;
+  margin: 0 auto 231px;
 }
 
 .container {
@@ -115,7 +114,6 @@ a:hover {
   font-weight: 800;
   font-size: 40px;
   text-align: center;
-  /* letter-spacing: 0.37px; */
   color: #172b4d;
   max-width: 585px;
   padding-top: 76px;
@@ -137,15 +135,18 @@ a:hover {
 }
 
 .socials {
+  list-style: none;
   margin-top: 33px;
   display: flex;
   transition: all 0.2s ease-in-out;
+}
+
+.socials li {
   padding: 0 5px;
 }
 
-.socials a:hover,
-.more-info img:hover {
-  transform: scale(1.3);
+.socials a {
+  display: block;
 }
 
 .more-info {
@@ -156,6 +157,11 @@ a:hover {
 .more-info img {
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+}
+
+.socials a:hover,
+.more-info img:hover {
+  transform: scale(1.3);
 }
 
 @media (min-width: 768px) {
@@ -179,6 +185,10 @@ a:hover {
   .hero-title {
     font-size: 48px;
     padding-top: 172px;
+  }
+
+  .hero {
+    background-image: url('../img/header-llustration-desktop.svg');
   }
 }
 
