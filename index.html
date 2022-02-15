@@ -374,17 +374,59 @@
         </div>
       </section>
     </main>
-    <!-- ContactMe-page -->
-    <section>
-      <h2>
-        I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
-      </h2>
-        <form action="https://formspree.io/f/myyowkra" method="post">
-          <input type="text" required name="username" maxlength="30" placeholder="Text Input">
-          <input type="email" required name="email" placeholder="jeremy@gmail.com" >
-          <textarea name="desc" required maxlength="500" placeholder="Write your message here"></textarea>
-         <div class="submit-desktop"><input type="submit" value="Get It Touch" ></div>
-      </form>
+    <!-- ContactMe-page-form -->
+    <section class="contact contactMe ">
+      <div class="sec-wrapper">
+        <div class="sec-text">
+          <h2 class="sec-title">
+            I'm always interested in hearing about new projects, so if you'd
+            like to chat please get in touch.
+          </h2>
+        </div>  
+      <form
+          action="https://formspree.io/f/myyowkra"
+          method="post"
+          class="form"
+        >
+          <ul>
+            <li>
+              <input
+                type="text"
+                name="full_name"
+                placeholder="Full Name"
+                maxlength="30"
+                required
+              />
+            </li>
+
+            <li>
+              <input
+                type="email"
+                name="email_address"
+                placeholder="Email Address"
+                maxlength="30"
+                pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+                required
+              />
+            </li>
+
+            <li>
+              <textarea
+                name="comment"
+                rows="5"
+                placeholder="Enter text here"
+                maxlength="500"
+                required
+              ></textarea>
+            </li>
+
+            <li class="text-center">
+              <button type="submit" class="btn">Get in touch</button>
+            </li>
+          </ul>
+        </form>
+       
+    <!--socials-icons-->
       <ul class="socials">
         <li>
           <a
@@ -432,9 +474,8 @@
           </a>
         </li>
       </ul>
-      <p>myemailhere@email.com
+      <p>ezekielutshudi@email.com
       </p>
-      <div class="scroll">
       </div>
   </section>
     <footer></footer>
