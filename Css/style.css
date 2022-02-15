@@ -364,6 +364,10 @@ img {
     margin: 0 25px;
   }
 
+  .contactMe {
+    background-image: url(images\illustration-contact-form.jpg);
+  }
+
   .scroll {
     position: unset;
     width: 134px;
