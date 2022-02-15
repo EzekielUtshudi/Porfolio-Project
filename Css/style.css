@@ -275,14 +275,15 @@ img {
   padding: 12px;
   background: #36b37f;
   border-radius: 4px;
-  font-weight: 500;
   font-size: 17px;
-  line-height: 24px;
+  line-height: 20px;
   color: #fff;
+  border: 0;
 }
 
 .btn:hover {
   background-color: #27c080;
+  font-size: 20px;
   color: #fff;
 }
 
