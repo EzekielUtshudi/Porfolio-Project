@@ -364,6 +364,18 @@ img {
     margin: 0 25px;
   }
 
+  .scroll {
+    position: unset;
+    width: 134px;
+    height: 5px;
+    left: calc(50% - 134px / 2 - 0.5px);
+    bottom: 8px;
+    background: #0d151e;
+    border-radius: 10px;
+    margin-top: 320px;
+    margin-left: 100px;
+  }
+
   .sec-text {
     margin-left: 12px;
     margin-right: 12px;
