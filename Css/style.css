@@ -346,7 +346,9 @@ img {
   line-height: 16px;
   margin: 5px;
 }
+
 /* The Responsiveness with media queries-section */
+
 /* 1020 */
 @media (max-width: 1020px) {
   .hero-description {
