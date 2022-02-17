@@ -216,12 +216,21 @@ img {
 }
 
 .lower .tags {
-  display: flex;
-  justify-content: center;
+  width: 100%;
+  /* display: flex;
+  justify-content: center; */
+  display: inline;
   list-style: none;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   margin: 16px 0 30px;
   row-gap: 20px;
+  /* border: 1px solid red; */
+}
+
+.lower .tags li{
+  /* border: 1px solid green; */
+  width: auto;
+  float: right;
 }
 
 .lower .tags a {
