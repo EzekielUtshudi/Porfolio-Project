@@ -374,7 +374,111 @@
         </div>
       </section>
     </main>
-    
-    <footer></footer>
+  <footer>
+    <!-- ContactMe-page-form -->
+    <section class="contact contactMe ">
+      <div class="sec-wrapper">
+        <div class="sec-text">
+          <h2 class="sec-title">
+            I'm always interested in hearing about new projects, so if you'd
+            like to chat please get in touch.
+          </h2>
+        </div>  
+      <form
+          action="https://formspree.io/f/myyowkra"
+          method="post"
+          class="form"
+        >
+          <ul>
+            <li>
+              <input
+                type="text"
+                name="full_name"
+                placeholder="Full Name"
+                maxlength="30"
+                required
+              />
+            </li>
+
+            <li>
+              <input
+                type="email"
+                name="email_address"
+                placeholder="Email Address"
+                maxlength="30"
+                pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+                required
+              />
+            </li>
+
+            <li>
+              <textarea
+                name="comment"
+                rows="5"
+                placeholder="Enter text here"
+                maxlength="500"
+                required
+              ></textarea>
+            </li>
+
+            <li class="text-center">
+              <button type="submit" class="btn">Get in touch</button>
+            </li>
+          </ul>
+        </form>
+       
+    <!--socials-icons-->
+      <ul class="socials">
+        <li>
+          <a
+            href="https://github.com/ezekielutshudi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./images/github-icon.svg" alt="github" />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/ezekielutshudi/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./images/linkedin-icon.svg" alt="linkedIn" />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://angel.co/u/ezekiel-utshudi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./images/angel-list-icon.svg" alt="angelist" />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/ezekielutshudi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./images/twitter-icon.svg" alt="twitter" />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://medium.com/@ezekielutshudi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./images/medium-icon.svg" alt="medium" />
+          </a>
+        </li>
+      </ul>
+      <p>ezekielutshudi@email.com
+      </p>
+      </div>
+  </section>
+  </footer>
   </body>
 </html>
