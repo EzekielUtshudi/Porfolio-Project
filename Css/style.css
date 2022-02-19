@@ -179,7 +179,7 @@ button {
 /* works */
 .works {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto;
   width: 100%;
   column-gap: 22px;
   row-gap: 22px;
@@ -220,7 +220,8 @@ button {
 
   /* display: flex;
   justify-content: center; */
-  display: inline;
+  display: flex;
+  justify-content: center;
   list-style: none;
 
   /* flex-wrap: wrap; */
@@ -259,13 +260,10 @@ button {
 }
 
 .sec-text {
-  margin: 0 124px 43px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 100px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .sec-title {
@@ -389,9 +387,9 @@ button {
 }
 
 .lower .tags li {
-  /* border: 1px solid green; */
   width: auto;
-  float: right;
+  display: flex;
+  align-items: center;
 }
 
 input,
@@ -441,7 +439,6 @@ textarea::placeholder {
 }
 
 /* footer section */
-
 .footer {
   display: flex;
   justify-content: center;
@@ -459,8 +456,8 @@ textarea::placeholder {
     padding: 0 29px;
   }
 
-  .sec-wrapper {
-    margin: 0 20px;
+  .works {
+    grid-template-columns: auto auto auto;
   }
 
   .mb-menu {
@@ -515,11 +512,7 @@ textarea::placeholder {
   .d-lg-flex {
     flex-direction: row;
     column-gap: 2%;
-  }
-
-  .sec-text {
-    margin-left: 12px;
-    margin-right: 12px;
+    width: 80%;
   }
 
   .d-lg-flex .sec-text {
@@ -571,7 +564,6 @@ textarea::placeholder {
 }
 
 /* Additional animation */
-
 @keyframes shake {
   10%,
   90% {
