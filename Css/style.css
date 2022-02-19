@@ -179,7 +179,7 @@ button {
 /* works */
 .works {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 369px);
+  grid-template-columns: auto auto auto;
   width: 100%;
   column-gap: 22px;
   row-gap: 22px;
@@ -251,7 +251,6 @@ button {
 }
 
 .sec-wrapper {
-  max-width: 1171px;
   display: flex;
   flex-direction: column;
   align-items: center;
