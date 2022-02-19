@@ -442,11 +442,20 @@ textarea::placeholder {
 }
 
 /* footer section */
+
 .footer {
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #dfe1e6;
 }
 
-@media (min-width: 992px) and (max-width: 1100px) {
+.footer .socials {
+  padding: 16px 0;
+  margin: 0;
+}
+
+@media (min-width: 992px) {
   .hero-description {
     padding: 0 29px;
   }
