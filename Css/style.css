@@ -304,7 +304,7 @@ button {
 .about {
   background:
   url('../Images/about-bg-icon.svg') 100% 0% no-repeat,
-  url('../Images/about_m_l.svg') -16% 26% no-repeat
+  url('../Images/about_m_l.svg') -16% 26% no-repeat,
   width: 100%;
 }
 
