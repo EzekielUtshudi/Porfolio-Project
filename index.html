@@ -9,21 +9,37 @@
   </head>
   <body>
     <!-- the header-section-->
-
     <header class="header">
       <div class="brand">
         <a href="https://github.com/EzekielUtshudi"> Welcome </a>
       </div>
       <nav class="navbar">
-        <a class="nav-link" href="/portfolio"> Portfolio </a>
-        <a class="nav-link" href="/about"> About </a>
-        <a class="nav-link" href="/contact"> Contact </a>
+        <a class="nav-link" href="#works"> Portfolio </a>
+        <a class="nav-link" href="#about"> About </a>
+        <a class="nav-link" href="#contact"> Contact </a>
       </nav>
-      <nav class="heading-manu">
-        <button type="button" class="mb-menu">
+
+      <nav class="hamburger">
+        <button type="button" class="mb-menu" aria-label="menu">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
+
+        <ul class="mb-menu-list">
+          <li>
+            <a href="#works"> Portfolio </a>
+          </li>
+          <li>
+            <a href="#about"> About </a>
+          </li>
+          <li>
+            <a href="#contact"> Contact </a>
+          </li>
+        </ul>
       </nav>
     </header>
+  
     <!--the main-section-->
     <main class="main">
       <section class="hero">
@@ -89,7 +105,7 @@
         </div>
       </section>
       <!-- The work and Experience section -->
-      <section>
+      <section id="works">
         <div class="sec-wrapper">
           <div class="sec-text">
             <h2 class="sec-title">My Recent Works</h2>
@@ -237,9 +253,9 @@
         </div>
       </section>
 
-      <!-- about-page -->
+      <!-- about-page section -->
 
-      <section class="about">
+      <section id="about" class="about">
         <div class="sec-wrapper">
           <div class="sec-text">
             <h2 class="sec-title">About me</h2>
@@ -373,7 +389,7 @@
     </main>
   <footer>
     <!-- ContactMe-page-form -->
-    <section class="contact contactMe ">
+    <section id="contact" class="contact contactMe ">
       <div class="sec-wrapper">
         <div class="sec-text">
           <h2 class="sec-title">
@@ -477,5 +493,6 @@
       </div>
   </section>
   </footer>
+  <script src="js/menu.js"></script>
   </body>
 </html>
