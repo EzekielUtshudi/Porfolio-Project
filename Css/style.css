@@ -303,8 +303,8 @@ button {
 /* about section */
 .about {
   background:
-  url('../Images/about-bg-icon.svg') 100% 0% no-repeat,
-  url('../Images/about_m_l.svg') -16% 26% no-repeat,
+    url('../Images/about-bg-icon.svg') 100% 0% no-repeat,
+    url('../Images/about_m_l.svg') -16% 26% no-repeat;
   width: 100%;
 }
 
@@ -353,7 +353,6 @@ button {
   position: relative;
   z-index: -1;
 }
-
 
 .btn:hover {
   background-color: #70cfa8;
@@ -426,7 +425,7 @@ button {
 
 /* contact */
 .contact {
-  background-image:  url('../Images/illustration-2-contact-form-desktop.png');
+  background-image: url('../Images/illustration-2-contact-form-desktop.png');
   background-position: 100% 80%;
   background-repeat: no-repeat;
 }
@@ -522,7 +521,7 @@ textarea::placeholder {
   left: 8px;
 }
 
-/*media querie 992 */
+/* media querie 992 */
 
 @media (min-width: 992px) {
   .hero-description {
@@ -636,7 +635,7 @@ textarea::placeholder {
   }
 }
 
-/* additional animation*/
+/* additional animation */
 @keyframes shake {
   10%,
   90% {
