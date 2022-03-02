@@ -1,5 +1,6 @@
 {
     "extends": ["stylelint-config-standard"],
+    "extends": "jquery",
     "plugins": ["stylelint-scss", "stylelint-csstree-validator"],
     "rules": {
       "at-rule-no-unknown": null,
