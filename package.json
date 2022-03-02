@@ -24,6 +24,7 @@
     "stylelint-config-standard": "^25.0.0"
   },
   "dependencies": {
+    "jquery": "^3.6.0",
     "stylelint-csstree-validator": "^2.0.0",
     "stylelint-scss": "^4.1.0"
   }
