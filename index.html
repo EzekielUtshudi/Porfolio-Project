@@ -419,9 +419,11 @@
                 name="email_address"
                 placeholder="Email Address"
                 maxlength="30"
+                class="textEmail"
                 pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
                 required
               />
+              <span class="txtError"></span>
             </li>
 
             <li>
@@ -435,7 +437,7 @@
             </li>
 
             <li class="text-center">
-              <button type="submit" class="btn">Get in touch</button>
+              <button type="submit" class="btn btnSubmit">Get in touch</button>
             </li>
           </ul>
         </form>
@@ -493,6 +495,7 @@
       </div>
   </section>
   </footer>
+  <script src="js/jquery.min.js"></script>
   <script src="js/menu.js"></script>
   </body>
 </html>
