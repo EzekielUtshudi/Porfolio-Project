@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
   --primary: #1d6346;
@@ -19,7 +19,7 @@ html {
 body {
   color: #172b4d;
   background: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
 }
 
 body.no-scroll {
@@ -144,7 +144,7 @@ button {
 }
 
 .hero {
-  background-image: url('../Images/header-llustration-mobile.svg');
+  background-image: url("../Images/header-llustration-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -227,7 +227,7 @@ button {
 
 .more-info {
   margin-top: 24px;
-  padding: 49px 0 24px 0;
+  padding: 49px 0 24px;
 }
 
 .more-info img {
@@ -267,7 +267,6 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .lower h3 {
@@ -303,8 +302,8 @@ button {
 /* about section */
 .about {
   background:
-    url('../Images/about-bg-icon.svg') 100% 0% no-repeat,
-    url('../Images/about_m_l.svg') -16% 26% no-repeat;
+    url("../Images/about-bg-icon.svg") 100% 0% no-repeat,
+    url("../Images/about_m_l.svg") -16% 26% no-repeat;
   width: 100%;
 }
 
@@ -425,7 +424,7 @@ button {
 
 /* contact */
 .contact {
-  background-image: url('../Images/illustration-2-contact-form-desktop.png');
+  background-image: url("../Images/illustration-2-contact-form-desktop.png");
   background-position: 100% 80%;
   background-repeat: no-repeat;
 }
@@ -457,7 +456,7 @@ textarea {
   font-size: 15px;
   line-height: 24px;
   color: #6b778c;
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
 }
 
 textarea {
@@ -471,7 +470,7 @@ textarea:focus-visible {
 
 input::placeholder,
 textarea::placeholder {
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
 }
 
 textarea::placeholder {
@@ -555,7 +554,7 @@ textarea::placeholder {
   }
 
   .hero {
-    background-image: url('../Images/header-llustration-desktop.svg');
+    background-image: url("../Images/header-llustration-desktop.svg");
   }
 
   .hero-inner {
@@ -564,16 +563,16 @@ textarea::placeholder {
 
   .about {
     background:
-      url('../Images/about-bg-icon.svg') 100% 0% no-repeat,
-      url('../Images/about-mobile-icon.svg') 0% 26% no-repeat;
+      url("../Images/about-bg-icon.svg") 100% 0% no-repeat,
+      url("../Images/about-mobile-icon.svg") 0% 26% no-repeat;
     width: 100%;
   }
 
   .contact {
     background:
-      url('../Images/illustration-contact-form.jpg') 100% 97% no-repeat,
-      url('../Images/illustration-1-contact-form-desktop\ \(1\).svg') 0% 109% no-repeat,
-      url('../Images/illustration-2-contact-form-desktop.svg') 27% 87% no-repeat;
+      url("../Images/illustration-contact-form.jpg") 100% 97% no-repeat,
+      url("../Images/illustration-1-contact-form-desktop\ \(1\).svg") 0% 109% no-repeat,
+      url("../Images/illustration-2-contact-form-desktop.svg") 27% 87% no-repeat;
   }
 
   .contact .socials,
