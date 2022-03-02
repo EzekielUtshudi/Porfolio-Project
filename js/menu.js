@@ -13,28 +13,3 @@ menuList.forEach((list) => {
   });
 });
 
-$(function() {
-
-  $(".btnSubmit").on("click", function(e) {
-    e.preventDefault();
-
-    var email = $(".textEmail").val();
-
-     if (email.length > 0)
-     {
-      if (email == email.toLowerCase())
-      {
-        $(".form").submit();
-      }
-      else {
-        $(".txtError").text("Invalid input");
-      }
-     }
-     else 
-     {
-       alert("no input");
-     }
-
-  });
-
-});
