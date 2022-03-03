@@ -600,7 +600,7 @@ textarea::placeholder {
   margin-bottom: 16px;
 }
 
-.error {
+.error{
   color: red;
 }
 
