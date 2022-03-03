@@ -132,7 +132,7 @@ function displayErr(input, msg) {
 }
 
 function validateForm(input, msg) {
-  //let x = document.forms["myForm"]["fname"].value;
+  // let x = document.forms["myForm"]["fname"].value;
 
   const inputVal = input.value.trim().toLowerCase();
   if (inputVal !== input.value.trim()) {
@@ -141,7 +141,6 @@ function validateForm(input, msg) {
     displayErr(input, '');
     form.submit();
   }
-
 }
 
 form.addEventListener('submit', (e) => {
