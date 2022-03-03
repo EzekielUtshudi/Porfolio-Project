@@ -1,33 +1,31 @@
 {
-  "name": "Hello-world",
-  "version": "1.0.0",
-  "description": "a simple hello-world project",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "extends": [
+    "stylelint-config-standard"
+  ],
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-csstree-validator"
+  ],
+  "rules": {
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": true,
+    "csstree/validator": true
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/EzekielUtshudi/Hello-world.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/EzekielUtshudi/Hello-world/issues"
-  },
-  "homepage": "https://github.com/EzekielUtshudi/Hello-world#readme",
+  "ignoreFiles": [
+    "build/**",
+    "dist/**",
+    "**/reset*.css",
+    "**/bootstrap*.css",
+    "**/*.js",
+    "**/*.jsx"
+  ],
   "devDependencies": {
-    "eslint": "^8.8.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.28.0",
-    "eslint-plugin-react-hooks": "^4.3.0",
-    "hint": "^6.1.9",
-    "stylelint": "^13.13.1",
-    "stylelint-config-standard": "^21.0.0",
-    "stylelint-csstree-validator": "^1.9.0",
-    "stylelint-scss": "^3.21.0"
+    "stylelint": "^14.5.3",
+    "stylelint-config-standard": "^25.0.0"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "stylelint-csstree-validator": "^2.0.0",
+    "stylelint-scss": "^4.1.0"
   }
 }

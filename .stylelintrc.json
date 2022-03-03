@@ -1,5 +1,7 @@
 {
     "extends": ["stylelint-config-standard"],
+    "extends": "jquery",
+    "extends": "airbnb",
     "plugins": ["stylelint-scss", "stylelint-csstree-validator"],
     "rules": {
       "at-rule-no-unknown": null,
