@@ -46,10 +46,10 @@ btn.addEventListener('click', () => {
   menu.classList.toggle('active');
   document.body.classList.toggle('no-scroll');
 });
-
 menuList.forEach((list) => {
   list.addEventListener('click', () => {
     menu.classList.remove('active');
+    document.body.classList.toggle('no-scroll');
   });
 });
 
