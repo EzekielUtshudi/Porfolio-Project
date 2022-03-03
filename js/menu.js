@@ -20,7 +20,7 @@ function generateWorks({ name, tech, ImgUrl }, index) {
     (tec) => `<li>
       <a href="#"> ${tec} </a>
     </li>`,
-  )}
+  ).join('')}
     </ul>
     <button class="btn show-modal" data-id="${index}" type="button">
       See Project
@@ -88,7 +88,7 @@ function generateModal({
     (tec) => `<li>
         <a href="#"> ${tec} </a>
       </li>`,
-  )}
+  ).join('')}
     </ul>
     <p class="modal-desc">
       ${description}

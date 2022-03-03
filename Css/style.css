@@ -565,7 +565,7 @@ textarea::placeholder {
   border-radius: 8px;
   z-index: 6;
   background: #c1c7d0c7;
-  padding-top: 50px;
+  padding: 50px 20px;
   left: 0;
   top: 0;
   width: 100%;
@@ -583,6 +583,7 @@ textarea::placeholder {
   background: #fff;
   max-width: 768px;
   position: relative;
+  border-radius: 8px;
 }
 
 .modal-img {
@@ -671,6 +672,11 @@ textarea::placeholder {
     top: 20px;
     right: 20px;
     z-index: 1;
+    background: rgba(0, 0, 0, 0.267);
+  }
+
+  .modalcross span{
+    background: white;
   }
 
   .sec-text {
