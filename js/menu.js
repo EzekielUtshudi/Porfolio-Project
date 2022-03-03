@@ -46,10 +46,10 @@ btn.addEventListener('click', () => {
   menu.classList.toggle('active');
   document.body.classList.toggle('no-scroll');
 });
-
 menuList.forEach((list) => {
   list.addEventListener('click', () => {
     menu.classList.remove('active');
+    document.body.classList.toggle('no-scroll');
   });
 });
 
@@ -121,4 +121,30 @@ workBtns.forEach((workBtn) => {
     modalContainer.classList.add('active');
     document.body.classList.add('no-scroll');
   });
+});
+// The Mail-validation-section
+const form = document.querySelector('.form');
+const MAIL_ERROR = 'Please only use lowercase';
+
+function displayErr(input, msg) {
+  const msgCon = input.parentNode.querySelector('small');
+  msgCon.innerText = msg;
+}
+
+function validateForm(input, msg) {
+  //let x = document.forms["myForm"]["fname"].value;
+  const inputVal = input.value.trim().toLowerCase();
+  if (inputVal !== input.value.trim()) {
+    displayErr(input, msg);
+  } else {
+    displayErr(input, '');
+    form.submit();
+  }
+
+}
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  validateForm(form.elements.email_address, MAIL_ERROR);
 });
