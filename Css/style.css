@@ -672,10 +672,10 @@ textarea::placeholder {
     top: 20px;
     right: 20px;
     z-index: 1;
-    background: rgba(0, 0, 0, 0.267);
+    background: rgb(0 0 0 / 26.7%);
   }
 
-  .modalcross span{
+  .modalcross span {
     background: white;
   }
 
