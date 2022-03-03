@@ -599,7 +599,8 @@ textarea::placeholder {
   line-height: 44px;
   margin-bottom: 16px;
 }
-.error{
+
+.error {
   color: red;
 }
 

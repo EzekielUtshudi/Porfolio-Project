@@ -20,6 +20,9 @@
     "**/*.jsx"
   ],
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.13.0",
+    "@typescript-eslint/parser": "^5.13.0",
+    "eslint": "^8.10.0",
     "stylelint": "^14.5.3",
     "stylelint-config-standard": "^25.0.0"
   },
