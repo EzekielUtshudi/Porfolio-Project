@@ -132,8 +132,6 @@ function displayErr(input, msg) {
 }
 
 function validateForm(input, msg) {
-  // let x = document.forms["myForm"]["fname"].value;
-
   const inputVal = input.value.trim().toLowerCase();
   if (inputVal !== input.value.trim()) {
     displayErr(input, msg);
@@ -148,3 +146,53 @@ form.addEventListener('submit', (e) => {
 
   validateForm(form.elements.email_address, MAIL_ERROR);
 });
+
+// The local-Storage-section
+
+function createUserData(formElement) {
+  return {
+    fName: formElement.elements.f_name.value.trim(),
+    lName: formElement.elements.l_name.value.trim(),
+    emailAddress: formElement.elements.email_address.value.trim(),
+    comment: formElement.elements.comment.value.trim(),
+  };
+}
+
+function storeInfo(formElement) {
+  localStorage.setItem('userInfo', JSON.stringify(createUserData(formElement)));
+}
+
+// submit form-section
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  handleMailValidation(form.elements.email_address, MAIL_ERROR);
+});
+
+Array.from(form.elements).forEach((elem) => {
+  elem.addEventListener('input', () => {
+    storeInfo(form);
+  });
+});
+
+// This section loads data form with data from local storage
+function mapDataForm(data) {
+  if (Object.entries(data).length > 0) {
+    const {
+      fName, lName, emailAddress, comment,
+    } = data;
+
+    form.elements.f_name.value = fName;
+    form.elements.l_name.value = lName;
+    form.elements.email_address.value = emailAddress;
+    form.elements.comment.value = comment;
+  }
+}
+
+function loadFormData() {
+  const userData = localStorage.length > 0 ? JSON.parse(localStorage.getItem('userInfo')) : {};
+
+  mapDataForm(userData);
+}
+
+loadFormData();
