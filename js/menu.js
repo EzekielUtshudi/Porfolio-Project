@@ -124,14 +124,15 @@ workBtns.forEach((workBtn) => {
 });
 // The Mail-validation-section
 const form = document.querySelector('.form');
-const MAIL_ERROR = 'Please only use lowercase';
+const MAIL_ERROR = 'Please enter your email address in lower case';
 
 function displayErr(input, msg) {
   const msgCon = input.parentNode.querySelector('small');
+
   msgCon.innerText = msg;
 }
 
-function validateForm(input, msg) {
+function handleMailValidation(input, msg) {
   const inputVal = input.value.trim().toLowerCase();
   if (inputVal !== input.value.trim()) {
     displayErr(input, msg);
@@ -141,13 +142,7 @@ function validateForm(input, msg) {
   }
 }
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-
-  validateForm(form.elements.email_address, MAIL_ERROR);
-});
-
-// The local-Storage-section
+// local Storage
 
 function createUserData(formElement) {
   return {
@@ -162,7 +157,7 @@ function storeInfo(formElement) {
   localStorage.setItem('userInfo', JSON.stringify(createUserData(formElement)));
 }
 
-// submit form-section
+// submit form
 form.addEventListener('submit', (e) => {
   e.preventDefault();
 
@@ -175,7 +170,7 @@ Array.from(form.elements).forEach((elem) => {
   });
 });
 
-// This section loads data form with data from local storage
+// load form with data from local storage
 function mapDataForm(data) {
   if (Object.entries(data).length > 0) {
     const {
