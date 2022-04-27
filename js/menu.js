@@ -50,7 +50,6 @@ menuList.forEach((list) => {
   list.addEventListener('click', () => {
     menu.classList.remove('active');
     document.body.classList.toggle('no-scroll');
-<<<<<<< HEAD
   });
 });
 
@@ -125,15 +124,15 @@ workBtns.forEach((workBtn) => {
 });
 // The Mail-validation-section
 const form = document.querySelector('.form');
-const MAIL_ERROR = 'Please only use lowercase';
+const MAIL_ERROR = 'Please enter your email address in lower case';
 
 function displayErr(input, msg) {
   const msgCon = input.parentNode.querySelector('small');
+
   msgCon.innerText = msg;
 }
 
-function validateForm(input, msg) {
-  //let x = document.forms["myForm"]["fname"].value;
+function handleMailValidation(input, msg) {
   const inputVal = input.value.trim().toLowerCase();
   if (inputVal !== input.value.trim()) {
     displayErr(input, msg);
@@ -141,85 +140,54 @@ function validateForm(input, msg) {
     displayErr(input, '');
     form.submit();
   }
-
 }
 
+// local Storage
+
+function createUserData(formElement) {
+  return {
+    fName: formElement.elements.f_name.value.trim(),
+    lName: formElement.elements.l_name.value.trim(),
+    emailAddress: formElement.elements.email_address.value.trim(),
+    comment: formElement.elements.comment.value.trim(),
+  };
+}
+
+function storeInfo(formElement) {
+  localStorage.setItem('userInfo', JSON.stringify(createUserData(formElement)));
+}
+
+// submit form
 form.addEventListener('submit', (e) => {
   e.preventDefault();
 
-  validateForm(form.elements.email_address, MAIL_ERROR);
+  handleMailValidation(form.elements.email_address, MAIL_ERROR);
 });
-=======
+
+Array.from(form.elements).forEach((elem) => {
+  elem.addEventListener('input', () => {
+    storeInfo(form);
   });
 });
 
-// modal implementation
-const modalContainer = document.querySelector('.modal-container');
-const workBtns = document.querySelectorAll('.show-modal');
+// load form with data from local storage
+function mapDataForm(data) {
+  if (Object.entries(data).length > 0) {
+    const {
+      fName, lName, emailAddress, comment,
+    } = data;
 
-// create modal
-function generateModal({
-  ImgUrl, name, description, tech, demoUrl, gitUrl,
-}) {
-  const modal = document.createElement('div');
-  modal.classList.add('modal');
-
-  modal.innerHTML = `
-    <button type="button" class="modalcross">
-      <span></span>
-      <span></span>
-    </button>
-    <div class="modal-img">
-      <img src="Images/${ImgUrl}" alt="${name}" />
-    </div>
-    <div class="modal-d">
-      <h2 class="modal-title">${name}</h2>
-      <div class="modal-btn desktop">
-        <a href="${demoUrl}" class="btn"
-          ><span>See Live</span> <img src="Images/export.svg" alt="see live"
-        /></a>
-        <a href="${gitUrl}" class="btn"
-          ><span>See Source</span> <img src="Images/github_ic.svg" alt="see live"
-        /></a>
-      </div>
-    </div>
-    <ul class="tags">
-      ${tech.map(
-    (tec) => `<li>
-        <a href="#"> ${tec} </a>
-      </li>`,
-  ).join('')}
-    </ul>
-    <p class="modal-desc">
-      ${description}
-    </p>
-    <div class="modal-btn mobile">
-      <a href="${demoUrl}" class="btn"
-        ><span>See Live</span> <img src="Images/export.svg" alt="see live"
-      /></a>
-      <a href="${gitUrl}" class="btn"
-        ><span>See Source</span> <img src="Images/github_ic.svg" alt="see live"
-      /></a>
-    </div>
-  `;
-
-  modalContainer.appendChild(modal);
+    form.elements.f_name.value = fName;
+    form.elements.l_name.value = lName;
+    form.elements.email_address.value = emailAddress;
+    form.elements.comment.value = comment;
+  }
 }
 
-function closeBtn() {
-  document.querySelector('.modalcross').addEventListener('click', () => {
-    modalContainer.classList.remove('active');
-    document.body.classList.remove('no-scroll');
-  });
+function loadFormData() {
+  const userData = localStorage.length > 0 ? JSON.parse(localStorage.getItem('userInfo')) : {};
+
+  mapDataForm(userData);
 }
 
-workBtns.forEach((workBtn) => {
-  workBtn.addEventListener('click', () => {
-    modalContainer.innerHTML = '';
-    generateModal(workData[workBtn.dataset.id]);
-    closeBtn();
-    modalContainer.classList.add('active');
-    document.body.classList.add('no-scroll');
-  });
-});
->>>>>>> aa21a1622205cf88c9125d0fc1263c55f523e6f9
+loadFormData();

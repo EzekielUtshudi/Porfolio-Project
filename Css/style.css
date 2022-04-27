@@ -599,12 +599,10 @@ textarea::placeholder {
   line-height: 44px;
   margin-bottom: 16px;
 }
-<<<<<<< HEAD
-.error{
+
+.error {
   color: red;
 }
-=======
->>>>>>> aa21a1622205cf88c9125d0fc1263c55f523e6f9
 
 .modal .tags {
   display: flex;
