@@ -3,6 +3,7 @@
 # Setup and mobile version skeleton part 1
 
 > Profile project part 1.
+This project is build with simple HTML AND css showcasing my skills
 
 ## Built With
 
@@ -12,7 +13,7 @@
 
 ## Live Demo ()
 
-[Live Demo Link]( https://ezekielutshudi.github.io/Porfolio-Project/)
+[Live Demo Link]()
 
 
 ## Getting Started
