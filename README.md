@@ -3,16 +3,17 @@
 # Setup and mobile version skeleton part 1
 
 > Profile project part 1.
+This project is build with simple HTML AND css showcasing my skills
 
 ## Built With
 
 - Html,Css
 - Stylelint
-- Github actions
+- Github actions,
 
 ## Live Demo ()
 
-[Live Demo Link]( https://ezekielutshudi.github.io/Porfolio-Project/)
+[Live Demo Link]()
 
 
 ## Getting Started
