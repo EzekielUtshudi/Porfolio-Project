@@ -9,7 +9,7 @@ This project is build with simple HTML AND css showcasing my skills
 
 - Html,Css
 - Stylelint
-- Github actions
+- Github actions,
 
 ## Live Demo ()
 
