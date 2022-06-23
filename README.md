@@ -13,7 +13,7 @@ This project is build with simple HTML AND css showcasing my skills
 
 ## Live Demo ()
 
-[Live Demo Link]()
+[Live Demo Link](https://zingy-muffin-ffbe87.netlify.app/)
 
 
 ## Getting Started
