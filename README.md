@@ -11,8 +11,6 @@ This project is build with simple HTML AND css showcasing my skills
 - Stylelint
 - Github actions,
 
-## Live Demo ()
-
 [Live Demo Link](https://zingy-muffin-ffbe87.netlify.app/)
 
 ![image](https://user-images.githubusercontent.com/81693905/175304537-ca203c36-cd3e-4ce2-9a95-c5a336d413c4.png)
